@@ -1,0 +1,13 @@
+/*GLOBAL STYLE*/
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: black;
+  height: 100vh;
+}
+
+/*GLOBAL*/
