@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 
 body {
@@ -16,9 +17,16 @@ body {
   max-width: 1280px;
 }
 
+.flex {
+  display: flex;
+  justify-content: space-between;
+}
+
 :root {
   --bg-color: #352c22;
   --main-color: #ff7a00;
+  --icon-hover: rgba(255, 255, 255, 0.2);
+  --not-icon-hover: rgba(255, 255, 255, 0.09);
 }
 /*GLOBAL*/
 
@@ -29,12 +37,10 @@ header {
 }
 
 header {
-  display: flex;
-  justify-content: space-between;
   align-items: center;
 }
 
-header #logo a{
+header #logo a {
   text-decoration: none;
   color: var(--main-color);
 }
@@ -59,3 +65,69 @@ ul li a:hover {
   background-color: var(--main-color);
 }
 /*HEADER*/
+
+/*MAIN*/
+/*my-profile*/
+#my-profile {
+  margin-top: 30px;
+  padding: 16px 4%;
+  align-items: center;
+}
+
+#txt-profile h1 {
+  font-size: 32px;
+}
+
+#txt-profile h1 span {
+  color: var(--main-color);
+}
+
+#txt-profile p {
+  margin: 16px 0;
+  max-width: 600px;
+  text-align: justify;
+}
+
+#txt-profile #social-links {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+#txt-profile a {
+  color: var(--main-color);
+  font-size: 21px;
+  padding: 10px;
+  border-radius: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  transition: all 0.3s;
+}
+
+#txt-profile a:nth-child(2) {
+  color: var(--bg-color);
+}
+
+#txt-profile a:hover {
+  background-color: var(--icon-hover);
+}
+
+#txt-profile a:nth-child(2):hover {
+  background-color: var(--not-icon-hover);
+}
+
+#img-profile #avatar {
+  width: 368px;
+  height: 391px;
+  border-radius: 50%;
+  box-shadow: 10px 4px 0px var(--main-color);
+}
+
+#avatar img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}

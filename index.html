@@ -18,27 +18,55 @@
     <link rel="stylesheet" href="style.css" />
     <title>Habito Bom</title>
   </head>
-  <header class="interface">
-        <div id="logo">
-          <p>Habto.Bom</p>
-        </div>
-        <nav id="meu-descktop">
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Sobre</a></li>
-            <li><a href="#">Conquistas</a></li>
-            <li><a href="#">Sonho</a></li>
-          </ul>
-        </nav>
+  <header class="interface flex">
+    <div id="logo">
+      <a href="#">
+        <p>Habto.Bom</p>
+      </a>
+    </div>
+    <nav id="meu-descktop">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Sobre</a></li>
+        <li><a href="#">Conquistas</a></li>
+        <li><a href="#">Sonho</a></li>
+      </ul>
+    </nav>
   </header>
   <body>
-    <section id="my-profile"></section>
+    <main>
+      <section id="my-profile" class="interface flex">
+        <div id="txt-profile">
+          <h1>Alessandro<span>.</span></h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit
+            pariatur dolorem nostrum consectetur optio recusandae. Aspernatur
+            natus neque officiis dolores.
+          </p>
 
-    <section id="about"></section>
+          <div id="social-links">
+            <a href="https://www.instagram.com/habito.bom" target="_blank">
+              <i class="bi bi-instagram"></i>
+            </a>
+            <a href="#">
+              <i class="bi bi-youtube"></i>
+            </a>
+          </div>
+        </div>
 
-    <section id="conquest"></section>
+        <div id="img-profile">
+          <div id="avatar">
+            <img src="./assets/profile-img.jpg" alt="imagem do Alessandro" />
+          </div>
+        </div>
+      </section>
 
-    <section id="dream"></section>
+      <section id="about"></section>
+
+      <section id="conquest"></section>
+
+      <section id="dream"></section>
+    </main>
   </body>
   <footer></footer>
 </html>
