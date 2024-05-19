@@ -1,53 +1,60 @@
 /*GLOBAL STYLE*/
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-body{
+body {
   background-color: black;
   height: 100vh;
   color: white;
 }
 
-.interface{
+.interface {
   margin: 0 auto;
   max-width: 1280px;
 }
 
-:root{
-  --bg-color: #352C22;
-  --tx-color: #FF7A00;
+:root {
+  --bg-color: #352c22;
+  --tx-color: #ff7a00;
 }
 /*GLOBAL*/
 
 /*HEADER STYLE*/
-header{
+header {
   background-color: var(--bg-color);
-  border: solid;
   padding: 16px 4%;
 }
 
-header{
+header {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-header #logo{
+header #logo {
   color: var(--tx-color);
 }
 
-header nav ul{
+header nav ul {
   list-style: none;
 
   display: flex;
   gap: 21px;
 }
 
-ul li a{
+ul li a {
   text-decoration: none;
   color: white;
+
+  padding: 8px;
+  border-radius: 30px;
+  transition: background-color 0.3s;
+}
+
+ul li a:hover {
+  background-color: #ff7a00;
 }
 /*HEADER*/
