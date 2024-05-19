@@ -18,7 +18,7 @@ body {
 
 :root {
   --bg-color: #352c22;
-  --tx-color: #ff7a00;
+  --main-color: #ff7a00;
 }
 /*GLOBAL*/
 
@@ -34,8 +34,9 @@ header {
   align-items: center;
 }
 
-header #logo {
-  color: var(--tx-color);
+header #logo a{
+  text-decoration: none;
+  color: var(--main-color);
 }
 
 header nav ul {
@@ -55,6 +56,6 @@ ul li a {
 }
 
 ul li a:hover {
-  background-color: #ff7a00;
+  background-color: var(--main-color);
 }
 /*HEADER*/
