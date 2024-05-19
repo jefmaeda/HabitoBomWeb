@@ -8,6 +8,46 @@
 body{
   background-color: black;
   height: 100vh;
+  color: white;
 }
 
+.interface{
+  margin: 0 auto;
+  max-width: 1280px;
+}
+
+:root{
+  --bg-color: #352C22;
+  --tx-color: #FF7A00;
+}
 /*GLOBAL*/
+
+/*HEADER STYLE*/
+header{
+  background-color: var(--bg-color);
+  border: solid;
+  padding: 16px 4%;
+}
+
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header #logo{
+  color: var(--tx-color);
+}
+
+header nav ul{
+  list-style: none;
+
+  display: flex;
+  gap: 21px;
+}
+
+ul li a{
+  text-decoration: none;
+  color: white;
+}
+/*HEADER*/
