@@ -185,7 +185,16 @@ ul li a:hover {
 /**/
 
 /*FOOTER*/
+footer{
+  background-color: black;
+  margin-top: 27px;
+  padding: 34px;
+  text-align: center;
+}
 
+footer a{
+  color: white;
+}
 /**/
 /*media query*/
 @media screen and (max-width: 1100px) {
