@@ -170,7 +170,7 @@ ul li a:hover {
   padding: 16px 4%;
 }
 
-#victory-img{
+#victory-img {
   margin-top: 16px;
   justify-content: space-around;
   align-items: center;
@@ -185,14 +185,14 @@ ul li a:hover {
 /**/
 
 /*FOOTER*/
-footer{
+footer {
   background-color: black;
   margin-top: 27px;
   padding: 34px;
   text-align: center;
 }
 
-footer a{
+footer a {
   color: white;
 }
 /**/
@@ -201,6 +201,11 @@ footer a{
   /*GLOBAL*/
   .flex {
     flex-direction: column;
+  }
+
+  h1 {
+    text-align: center;
+    line-height: 45px;
   }
 
   #my-profile.flex {
@@ -212,13 +217,55 @@ footer a{
     display: none;
   }
 
-  /*my-profile*/
+  /*section profile*/
+  #my-profile {
+    padding: 16px 8%;
+  }
+
+  #txt-profile a{
+    font-size: 40px;
+  }
+
+  /* talvez celular
+  #img-profile #avatar.box{
+    width: 80%;
+    height: 100%;
+    box-shadow: 10px 4px 0px var(--main-color);
+  }
+  */
+
+  #img-profile #avatar {
+    margin: 0 auto;
+  }
+
   #social-links {
     justify-content: center;
   }
 
-  /*txt-about*/
+  /*section about*/
+  #about {
+    padding: 16px 8%;
+  }
+
   #txt-about {
     margin-top: 32px;
   }
+
+  /*SECTION CONQUEST*/
+  #conquest {
+    padding: 16px 8%;
+  }
+
+  #my-victory {
+    margin-top: 32px;
+  }
+
+  #victory-img {
+    gap: 26px;
+  }
+
+  /*SECTION DREAM*/
+  #dream {
+  padding: 16px 8%;
+}
 }
