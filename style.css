@@ -50,7 +50,7 @@ h1 span {
 
 .line {
   width: 60%;
-  margin: 0 auto 27px;
+  margin: 27px auto;
   border: 1px solid var(--line-color);
 }
 :root {
@@ -67,6 +67,7 @@ header {
   background-color: var(--bg-color);
   padding: 16px 4%;
   align-items: center;
+  margin-bottom: 42px;
 }
 
 header #logo a {
@@ -98,7 +99,6 @@ ul li a:hover {
 /*MAIN*/
 /*my-profile*/
 #my-profile {
-  margin-top: 42px;
   padding: 16px 4%;
   align-items: center;
 }
@@ -151,7 +151,6 @@ ul li a:hover {
 
 /*ABOUT*/
 #about {
-  margin-top: 42px;
   padding: 16px 4%;
 }
 
@@ -164,7 +163,30 @@ ul li a:hover {
   width: 100%;
   height: 100%;
 }
+/**/
 
+/*CONQUEST*/
+#conquest {
+  padding: 16px 4%;
+}
+
+#victory-img{
+  margin-top: 16px;
+  justify-content: space-around;
+  align-items: center;
+}
+/**/
+
+/*DREAM*/
+#dream {
+  margin-top: 42px;
+  padding: 16px 4%;
+}
+/**/
+
+/*FOOTER*/
+
+/**/
 /*media query*/
 @media screen and (max-width: 1100px) {
   /*GLOBAL*/
@@ -187,7 +209,7 @@ ul li a:hover {
   }
 
   /*txt-about*/
-  #txt-about{
+  #txt-about {
     margin-top: 32px;
   }
 }
