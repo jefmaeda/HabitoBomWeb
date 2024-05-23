@@ -140,6 +140,8 @@ ul li a:hover {
 
 #img-profile #avatar.box {
   border-radius: 50%;
+
+  animation: img-up-down 2.5s infinite ease-in-out;
 }
 
 #avatar img {
@@ -272,4 +274,11 @@ footer a {
   #dream {
   padding: 16px 8%;
 }
+}
+
+/*animation*/
+@keyframes img-up-down {
+  30%{
+    transform: translateY(-10%);
+  }
 }
