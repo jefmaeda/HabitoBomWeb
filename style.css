@@ -34,7 +34,7 @@ h1 {
   font-size: 36px;
 }
 
-h1 span {
+h1 span, h3 span, p span{
   color: var(--main-color);
 }
 
@@ -201,6 +201,10 @@ footer a {
   /*GLOBAL*/
   .flex {
     flex-direction: column;
+  }
+
+  h3{
+    text-align: center;
   }
 
   h1 {
