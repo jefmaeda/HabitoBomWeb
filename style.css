@@ -182,6 +182,16 @@ ul li a:hover {
   justify-content: space-around;
   align-items: center;
 }
+
+.img-victory-formate{
+  width: 180px;
+}
+
+.user-bg{
+  background-color: var(--bg-color);
+  padding: 4%;
+  border-radius: 8px;
+}
 /**/
 
 /*DREAM*/
