@@ -10,6 +10,8 @@ body {
   background-color: black;
   height: 100vh;
   color: white;
+
+  scroll-behavior: smooth;
 }
 
 .interface {
@@ -80,6 +82,7 @@ header #logo a {
 
 /*mobile*/
 #open-menu i{
+  display: none;
   font-size: 30px;
   color: var(--main-color);
 }
@@ -333,6 +336,10 @@ footer a {
   }
 
   /*HEADER*/
+  #open-menu i{
+    display: block;
+  }
+  
   header #interno.flex{
     flex-direction: row;
   }
