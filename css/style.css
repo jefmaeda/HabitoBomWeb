@@ -59,6 +59,7 @@ p span {
   --bg-color: #352c22;
   --line-color: #7c4302;
   --main-color: #ff7a00;
+  --bg-overlay: rgba(0, 0, 0, 0.5);
   --icon-hover: rgba(255, 255, 255, 0.2);
   --not-icon-hover: rgba(255, 255, 255, 0.09);
 }
@@ -78,6 +79,11 @@ header #logo a {
 }
 
 /*mobile*/
+#open-menu i{
+  font-size: 30px;
+  color: var(--main-color);
+}
+
 #menu-mobile {
   display: none;
   background-color: var(--bg-color);
@@ -85,7 +91,7 @@ header #logo a {
   position: fixed;
   top: 0;
   right: 0;
-  z-index: 1;
+  z-index: 2;
   width: 0%;
   overflow: hidden;
 }
@@ -115,6 +121,17 @@ header #logo a {
   color: var(--main-color);
   font-size: 30px;
 
+}
+
+#overlay-menu{
+  background-color: var(--bg-overlay);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  display: none;
 }
 /*mobile*/
 
@@ -307,6 +324,10 @@ footer a {
   }
 
   /*HEADER*/
+  header #interno.flex{
+    flex-direction: row;
+  }
+
   #menu-descktop {
     display: none;
   }
