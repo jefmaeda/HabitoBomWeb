@@ -27,14 +27,31 @@
           <p>Habito.Bom</p>
         </a>
       </div>
-      <nav id="menu-descktop">
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Sobre</a></li>
-          <li><a href="#">Conquistas</a></li>
-          <li><a href="#">Sonho</a></li>
-        </ul>
-      </nav>
+      <div id="menu-descktop">
+        <nav>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Sobre</a></li>
+            <li><a href="#">Conquistas</a></li>
+            <li><a href="#">Sonho</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div id="menu-mobile">
+        <div class="btn-close">
+          <i class="bi bi-x-lg"></i>
+        </div>
+
+        <nav>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Sobre</a></li>
+            <li><a href="#">Conquistas</a></li>
+            <li><a href="#">Sonho</a></li>
+          </ul>
+        </nav>
+      </div>
     </div>
   </header>
   <body>
@@ -128,20 +145,15 @@
       <section id="conquest" class="interface">
         <h1>Conquista Do nosso <span>Movimento</span></h1>
         <div id="users-conquest-area">
-            <div id="user-victory" class="flex">
-              <!--vou modificar para slider-->
-              <div class="slide">
-                <img
-                  src="./assets/antes-depois-gk.JPG"
-                  alt="imagem de text" />
-              </div>
-              <div class="slide">
-                <img
-                  src="./assets/depoimento-gk.JPG"
-                  alt="imagem de text" />
-              </div>
+          <div id="user-victory" class="flex">
+            <!--vou modificar para slider-->
+            <div class="slide">
+              <img src="./assets/antes-depois-gk.JPG" alt="imagem de text" />
             </div>
-
+            <div class="slide">
+              <img src="./assets/depoimento-gk.JPG" alt="imagem de text" />
+            </div>
+          </div>
 
           <p class="p-format">
             Esse rapaz chegou a marca de 127 kg, mas depois de muito esforço,
@@ -178,7 +190,8 @@
       </section>
     </main>
 
-    <script src="./js/script.js"></script> <!--slider-->
+    <script src="./js/script.js"></script>
+    <!--slider-->
   </body>
   <footer>
     Feito com ♥ pela
