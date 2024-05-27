@@ -94,6 +94,15 @@ header #logo a {
   z-index: 2;
   width: 0%;
   overflow: hidden;
+  transition: .3s;
+}
+
+#menu-mobile.its-open{
+width: 50%;
+}
+
+#menu-mobile.its-open ~ #overlay-menu{
+  display: block;
 }
 
 #menu-mobile nav ul{
