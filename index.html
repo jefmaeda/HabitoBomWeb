@@ -17,8 +17,8 @@
 
     <!--Bar Color-->
     <meta name="theme-color" content="#352c22" />
-    <link rel="stylesheet" href="style.css" />
     <title>Habito Bom</title>
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
   <header>
     <div id="interno" class="interface flex">
@@ -125,24 +125,32 @@
 
       <div class="line"></div>
 
-      <section id="conquest" class="interface flex">
-        <div id="user-victory">
-          <h1>Conquista Do nosso <span>Movimento</span></h1>
-          <div class="user-bg">
-            <div id="victory-img" class="flex">
-              <img class="img-victory-formate" src="./assets/agr-gk.JPG" alt="imagem de text" />
-              <img class="img-victory-formate" src="./assets/antes-depois-gk.JPG" alt="imagem de text" />
-              <img class="img-victory-formate" src="./assets/depoimento-gk.JPG" alt="imagem de text" />
+      <section id="conquest" class="interface">
+        <h1>Conquista Do nosso <span>Movimento</span></h1>
+        <div id="users-conquest-area">
+            <div id="user-victory" class="flex">
+              <!--vou modificar para slider-->
+              <div class="slide">
+                <img
+                  src="./assets/antes-depois-gk.JPG"
+                  alt="imagem de text" />
+              </div>
+              <div class="slide">
+                <img
+                  src="./assets/depoimento-gk.JPG"
+                  alt="imagem de text" />
+              </div>
             </div>
-            <p class="p-format">
-              Esse rapaz chegou a marca de 127 kg, mas depois de muito esforço,
-              dedicação, constância, foco e disciplina começou uma jornada
-              incrível com a gente e já diminuiu incríveis 15 kg ! Já notamos uma
-              grande mudança na sua transformação física que também vem trazendo
-              diversos benefícios na sua saúde mental e espiritual. Meus parabéns
-              @guuh_katayama por sua transformação inspiradora!
-            </p>
-          </div>
+
+
+          <p class="p-format">
+            Esse rapaz chegou a marca de 127 kg, mas depois de muito esforço,
+            dedicação, constância, foco e disciplina começou uma jornada
+            incrível com a gente e já diminuiu incríveis 15 kg ! Já notamos uma
+            grande mudança na sua transformação física que também vem trazendo
+            diversos benefícios na sua saúde mental e espiritual. Meus parabéns
+            @guuh_katayama por sua transformação inspiradora!
+          </p>
         </div>
 
         <div id="my-victory">
@@ -169,6 +177,8 @@
         </div>
       </section>
     </main>
+
+    <script src="./js/script.js"></script> <!--slider-->
   </body>
   <footer>
     Feito com ♥ pela
