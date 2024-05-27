@@ -34,7 +34,9 @@ h1 {
   font-size: 36px;
 }
 
-h1 span, h3 span, p span{
+h1 span,
+h3 span,
+p span {
   color: var(--main-color);
 }
 
@@ -75,14 +77,55 @@ header #logo a {
   color: var(--main-color);
 }
 
-header nav ul {
+/*mobile*/
+#menu-mobile {
+  display: none;
+  background-color: var(--bg-color);
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  width: 0%;
+  overflow: hidden;
+}
+
+#menu-mobile nav ul{
+  text-align: right;
+  list-style: none;
+}
+
+#menu-mobile nav ul li a{
+  display: block;
+  font-size: 20px;
+  padding: 20px 8%;
+  text-decoration: none;
+  color: white;
+}
+
+#menu-mobile nav ul li a:hover{
+  background-color: var(--main-color);
+}
+
+#menu-mobile .btn-close{
+  padding: 20px 8%;
+}
+
+#menu-mobile .btn-close i{
+  color: var(--main-color);
+  font-size: 30px;
+
+}
+/*mobile*/
+
+#menu-descktop nav ul {
   list-style: none;
 
   display: flex;
   gap: 21px;
 }
 
-ul li a {
+#menu-descktop ul li a {
   text-decoration: none;
   color: white;
 
@@ -91,7 +134,7 @@ ul li a {
   transition: background-color 0.3s;
 }
 
-ul li a:hover {
+#menu-descktop ul li a:hover {
   background-color: var(--main-color);
 }
 /*HEADER*/
@@ -156,7 +199,7 @@ ul li a:hover {
   padding: 16px 4%;
 }
 
-#img-about.flex{
+#img-about.flex {
   width: 50%;
   justify-content: center;
 }
@@ -178,31 +221,32 @@ ul li a:hover {
   text-align: center;
 }
 
-#users-conquest-area{
+#users-conquest-area {
   background-color: var(--bg-color);
   padding: 4%;
   border-radius: 8px;
 }
 
-#users-conquest-area p.p-format{
+#users-conquest-area p.p-format {
   max-width: 650px;
   margin: 0 auto;
   text-align: center;
 }
 
-#user-victory.flex{
+#user-victory.flex {
   padding: 23px 0;
   max-width: 700px;
   margin: 0 auto;
   justify-content: center;
 }
 
-#user-victory .slide{
+#user-victory .slide {
   margin: 0 auto;
   max-width: 300px;
 }
 
-#user-victory .slide img{
+#user-victory .slide img {
+  border-radius: 8px;
   width: 100%;
 }
 
@@ -214,7 +258,7 @@ ul li a:hover {
   padding: 16px 4%;
 }
 
-#img-dream.flex{
+#img-dream.flex {
   width: 50%;
   justify-content: center;
 }
@@ -249,7 +293,7 @@ footer a {
     flex-direction: column;
   }
 
-  h3{
+  h3 {
     text-align: center;
   }
 
@@ -267,12 +311,16 @@ footer a {
     display: none;
   }
 
+  #menu-mobile {
+    display: block;
+  }
+
   /*section profile*/
   #my-profile {
     padding: 16px 8%;
   }
 
-  #txt-profile a{
+  #txt-profile a {
     font-size: 40px;
   }
 
@@ -316,13 +364,13 @@ footer a {
 
   /*SECTION DREAM*/
   #dream {
-  padding: 16px 8%;
-}
+    padding: 16px 8%;
+  }
 }
 
 /*animation*/
 @keyframes img-up-down {
-  30%{
+  30% {
     transform: translateY(-10%);
   }
 }
