@@ -250,31 +250,37 @@ width: 50%;
   text-align: center;
 }
 
-#users-conquest-area {
+#conquest .user-warpper{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.users-conquest-area {
   background-color: var(--bg-color);
   padding: 4%;
   border-radius: 8px;
 }
 
-#users-conquest-area p.p-format {
+.users-conquest-area p.p-format {
   max-width: 650px;
   margin: 0 auto;
   text-align: center;
 }
 
-#user-victory.flex {
+.user-victory.flex {
   padding: 23px 0;
   max-width: 700px;
   margin: 0 auto;
   justify-content: center;
 }
 
-#user-victory .slide {
+.user-victory .slide {
   margin: 0 auto;
   max-width: 300px;
 }
 
-#user-victory .slide img {
+.user-victory .slide img {
   border-radius: 8px;
   width: 100%;
 }
