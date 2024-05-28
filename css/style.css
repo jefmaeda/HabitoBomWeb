@@ -285,6 +285,9 @@ width: 50%;
   width: 100%;
 }
 
+  #my-victory {
+    margin-top: 32px;
+  }
 /**/
 
 /*DREAM*/
@@ -397,11 +400,9 @@ footer a {
     padding: 16px 8%;
   }
 
-  #my-victory {
-    margin-top: 32px;
-  }
 
-  #victory-img {
+
+  .user-victory.flex {
     gap: 26px;
   }
 
